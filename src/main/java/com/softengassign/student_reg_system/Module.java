@@ -17,8 +17,8 @@ public class Module {
 	private String id;
 	private ArrayList<Student> studentList;
 	
-	public Module( String name, String id, ArrayList<Student> studentList ){
-		this.name = name;
+	public Module( String n, String id, ArrayList<Student> studentList ){
+		this.name = n;
 		this.id = id;
 		this.studentList = studentList;
 	}
@@ -27,8 +27,8 @@ public class Module {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String n) {
+		this.name = n;
 	}
 
 	public String getId() {

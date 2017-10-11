@@ -20,10 +20,9 @@ public class Course {
 	private DateTime startDate;
 	private DateTime endDate;
 
-	public Course(String name, ArrayList<Module> moduleList, 
-			DateTime startDate, DateTime endDate) {
-		this.name = name;
-		this.moduleList = moduleList;
+	public Course(String n, ArrayList<Module> modList, DateTime startDate, DateTime endDate) {
+		this.name = n;
+		this.moduleList = modList;
 		this.startDate = startDate;
 		this.endDate = endDate;
 	}
@@ -32,16 +31,16 @@ public class Course {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String n) {
+		this.name = n;
 	}
 
 	public ArrayList<Module> getModuleList() {
 		return moduleList;
 	}
 
-	public void setModuleList(ArrayList<Module> moduleList) {
-		this.moduleList = moduleList;
+	public void setModuleList(ArrayList<Module> modList) {
+		this.moduleList = modList;
 	}
 
 	public DateTime getStartDate() {

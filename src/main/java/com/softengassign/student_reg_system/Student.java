@@ -27,7 +27,7 @@ public class Student {
 	
 	}
 
-	public String getUsername(){
+	public String getUname(){
 		username = name + (Integer.toString(age));
 		return(username);
 
@@ -43,5 +43,5 @@ public class Student {
 	}
 	public int getID() {
 		return(ID);
-	}
-	}
+        }
+}

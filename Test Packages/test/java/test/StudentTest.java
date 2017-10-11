@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
 public class StudentTest {
 	
 	@Test
-	public void getUsernameTest(){
-		Student stu = new Student( "Conor", 22, "07/3/1995", 1);
-		assertEquals( stu.getUsername(), stu.getName() + stu.getAge() );
+	public void getUname(){
+		Student student = new Student( "Conor", 22, "07/3/1995", 1);
+		assertEquals( student.getUname(), student.getName() + student.getAge() );
 	}
 
 }
