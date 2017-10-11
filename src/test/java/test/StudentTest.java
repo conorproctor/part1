@@ -10,17 +10,14 @@ package test;
  */
 import com.softengassign.student_reg_system.Student;
 import org.junit.Test;
-import static org.junit.Assert.*; 
+import static org.junit.Assert.*;
 
 public class StudentTest {
-     
-    @Test
-    public void getUsername() throws Exception {
-        Student stud = new Student("Conor Proctor", 22, "07-03-1995", 1);
-        String actualUsername = stud.getUsername();
-        String expectedUsername = "ConorProctor22";
-        assertEquals(actualUsername,expectedUsername);
-    }
+	
+	@Test
+	public void getUsernameTest(){
+		Student stu = new Student( "Conor", 22, "07/3/1995", 1);
+		assertEquals( stu.getUsername(), stu.getName() + stu.getAge() );
+	}
 
 }
-

@@ -4,33 +4,46 @@
  * and open the template in the editor.
  */
 package com.softengassign.student_reg_system;
+import java.util.ArrayList;
 
-
-import com.softengassign.student_reg_system.Student;
-/**
+/*
  *
  * @author cproc
  */
 
 public class Module {
 	
-	private String moduleName;
-	private String ID;
-	private Student[] students;
-
-	public Module(String name, String id, Student[] enrolements) {
-		moduleName = name;
-		ID = id;
-		students = enrolements;
-	}
+	private String name;
+	private String id;
+	private ArrayList<Student> studentList;
 	
-	public String getModuleName() {
-		return(moduleName);
+	public Module( String name, String id, ArrayList<Student> studentList ){
+		this.name = name;
+		this.id = id;
+		this.studentList = studentList;
 	}
-	public String getID() {
-		return(ID);
+
+	public String getName() {
+		return name;
 	}
-	public Student[] getStudents() {
-		return(students);
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public ArrayList<Student> getStudentList() {
+		return studentList;
+	}
+
+	public void setStudentList(ArrayList<Student> studentList) {
+		this.studentList = studentList;
 	}
 }

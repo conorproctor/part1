@@ -5,7 +5,7 @@
  */
 package com.softengassign.student_reg_system;
 
-import org.joda.time.LocalDate;
+//import org.joda.time.LocalDate;
 /**
  *
  * @author cproc
@@ -13,7 +13,7 @@ import org.joda.time.LocalDate;
 
 public class Student {
 
-	private String name;
+        private String name;
 	private int age;
 	private String dob;
 	private int ID;
@@ -24,13 +24,13 @@ public class Student {
 		age = years;
 		dob = birth;
 		ID = id;
-		
-	}
 	
+	}
+
 	public String getUsername(){
 		username = name + (Integer.toString(age));
 		return(username);
-		
+
 	}
 	public String getName() {
 		return(name);
@@ -44,4 +44,4 @@ public class Student {
 	public int getID() {
 		return(ID);
 	}
-}
+	}
